@@ -1,9 +1,10 @@
+@use 'variables' as *;
 
 .menu-text {
-  color: #ddd;
+  color: $light-grey;
 }
 
 .signin-button {
-  background: #c6426e;
-  color: #ddd;
+  background: $button-color;
+  color: $light-grey
 }

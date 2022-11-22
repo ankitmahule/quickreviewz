@@ -1,4 +1,7 @@
-.banner {
+@use 'common-styles/variables' as *;
+
+.upper-section {
+  position:relative;
   background: #642B73;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -6,13 +9,22 @@
   // background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 800px;
 }
 
-.main-content {
+.main-section {
   position: absolute;
-  top: 500px;
-  left: 0;
-  right: 0;
-  background: #eee;
+  top: 600px;
+  left:0;
+  right:0;
+  height: 50rem;
+  background: #fff;
+}
+
+.second-section {
+  margin-top: 35rem;
+}
+
+.banner-heading {
+  font-family: 'Oswald', sans-serif;
 }
