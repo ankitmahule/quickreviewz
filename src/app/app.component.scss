@@ -14,7 +14,7 @@
 
 .main-section {
   position: absolute;
-  top: 600px;
+  top: 700px;
   left:0;
   right:0;
   height: 50rem;
@@ -25,6 +25,19 @@
   margin-top: 35rem;
 }
 
+.banner {
+  height: 70%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .banner-heading {
   font-family: 'Oswald', sans-serif;
+}
+
+.cart-img {
+  background: url('../assets/images/shopping.png') no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 30%;
 }
