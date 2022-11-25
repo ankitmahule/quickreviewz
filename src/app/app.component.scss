@@ -26,9 +26,9 @@
 }
 
 .banner {
-  height: 70%;
   align-items: center;
   justify-content: space-evenly;
+  height: 70%;
 }
 
 .banner-heading {
@@ -40,4 +40,13 @@
   background-size: cover;
   height: 100%;
   width: 30%;
+  @media screen and (min-width: 768px) and (max-width:1024px) {
+    width: 50%;
+  }
+}
+
+.search-container {
+  @media screen and (min-width: 768px) and (max-width:1024px) {
+    width: 50%;
+  }
 }
