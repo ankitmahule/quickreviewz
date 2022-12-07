@@ -1,28 +1,35 @@
-@use 'common-styles/variables' as *;
+@use "common-styles/variables" as *;
 
 .upper-section {
-  position:relative;
-  background: #642B73;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+  background: #642b73; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #c6426e,
+    #642b73
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #c6426e,
+    #642b73
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   // background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 800px;
+  height: 750px;
 }
 
 .main-section {
   position: absolute;
   top: 700px;
-  left:0;
-  right:0;
-  height: 50rem;
+  left: 0;
+  right: 0;
   background: #fff;
 }
 
-.second-section {
-  margin-top: 35rem;
+.section-gap {
+  margin-top: 5rem;
 }
 
 .banner {
@@ -32,21 +39,41 @@
 }
 
 .banner-heading {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 .cart-img {
-  background: url('../assets/images/shopping.png') no-repeat;
+  background: url("../assets/images/shopping.png") no-repeat;
   background-size: cover;
   height: 100%;
   width: 30%;
-  @media screen and (min-width: 768px) and (max-width:1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     width: 50%;
   }
 }
 
 .search-container {
-  @media screen and (min-width: 768px) and (max-width:1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     width: 50%;
   }
+}
+
+.facts-section {
+  background: #eee;
+}
+
+.buy-now {
+  background: $button-color;
+  color: $light-grey;
+  padding: 1rem 2.5rem;
+  margin: 1rem 0;
+}
+
+.search-section {
+  position: relative;
+}
+
+.search-button {
+  position:absolute;
+  right:0;
 }
