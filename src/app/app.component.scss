@@ -34,7 +34,7 @@
 
 .banner {
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 70%;
 }
 
@@ -74,6 +74,10 @@
 }
 
 .search-button {
-  position:absolute;
-  right:0;
+  background: $button-color;
+  color: #fff;
+}
+
+.search-input {
+  outline:none;
 }
