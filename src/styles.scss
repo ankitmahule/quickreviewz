@@ -7,3 +7,11 @@ body { margin: 0; font-family: 'Fira Sans', sans-serif; }
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media screen and (min-width:768px) {
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
