@@ -2,12 +2,18 @@
   <section class="upper-section">
     <app-header> </app-header>
     <section class="banner flex container mx-auto">
-      <section class="search-container">
+      <section class="search-container md:w-1/2">
         <h1
-          class="banner-heading xs:text-4xl sm:text-2xl lg:text-5xl text-red-200"
+          class="banner-heading xs:text-4xl text-amber-700 leading-tight"
         >
-          Curated and handpicked reviews for e-commerce products
+        Curated and pertinent information for the e-commerce products your are looking for
         </h1>
+        <ul class="features md:text-2xl p-5">
+          <li>A detailed analysis of the products to help you buy right</li>
+          <li>Navigate easily to marketplace to buy the product</li>
+          <li>Clear and concise reviews</li>
+        </ul>
+
         <!-- <div class="search-section">
           <input
             type="text"
@@ -17,7 +23,7 @@
           <button class="search-button text-2xl px-6 py-4"><em class="fa fa-search"></em></button>
         </div> -->
       </section>
-      <section class="hidden md:block cart-img"></section>
+      <section class="hidden md:block cart-img md:w-1/2"></section>
     </section>
   </section>
   <section class="section-gap container mx-auto py-10">

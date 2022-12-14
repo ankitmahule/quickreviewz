@@ -2,7 +2,6 @@
   <div class="flex flex-wrap items-center justify-between">
     <a href="/" class="logo mt-7"> </a>
     <button
-    *ngIf="hideMenu"
       data-collapse-toggle="navbar-default"
       type="button"
       class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -24,24 +23,16 @@
         ></path>
       </svg>
     </button>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-default" *ngif="hideMenu">
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
       <ul
-        class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 last:pr-0"
+        class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 last:pr-0 items-center"
       >
-        <li>
-          <a
-            routerLink="/electronics"
-            routerLinkActive="router-link-active"
-            class="menu-text"
-            >Electronics</a
-          >
-        </li>
         <li>
           <a
             routerLink="/fashion"
             routerLinkActive="router-link-active"
             class="menu-text"
-            >Fashion</a
+            >Home</a
           >
         </li>
         <li>
@@ -49,19 +40,32 @@
             routerLink="/health"
             routerLinkActive="router-link-active"
             class="menu-text"
-            >Health</a
+            >About us</a
           >
         </li>
-        <li>
+        <li class="social-icons">
           <a
             routerLink="/sports"
             routerLinkActive="router-link-active"
             class="menu-text"
-            >Sports</a
+            ><em class="fa fa-linkedin-square"></em></a
           >
         </li>
-        <li>
-          <a href="/login" class="px-5 py-2 rounded signin-button">Sign in</a>
+        <li class="social-icons">
+          <a
+            routerLink="/sports"
+            routerLinkActive="router-link-active"
+            class="menu-text"
+            ><em class="fa fa-instagram"></em></a
+          >
+        </li>
+        <li class="social-icons">
+          <a
+            routerLink="/sports"
+            routerLinkActive="router-link-active"
+            class="menu-text"
+            ><em class="fa fa-facebook-square"></em></a
+          >
         </li>
       </ul>
     </div>
