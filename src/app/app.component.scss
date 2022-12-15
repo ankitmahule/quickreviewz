@@ -1,20 +1,17 @@
 @use "common-styles/variables" as *;
 
 .upper-section {
-  position: relative;
   background: #642b73;
   background: -webkit-linear-gradient(
     to right,
-    #c6426e,
-    #642b73
+    $button-color,
+    $dark-bg
   );
   background: linear-gradient(
     to right,
-    #c6426e,
-    #642b73
+    $button-color,
+    $dark-bg
   );
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 100vh;
 }
 
@@ -23,11 +20,11 @@
   top: 700px;
   left: 0;
   right: 0;
-  background: #fff;
+  background: $white;
 }
 
 .section-gap {
-  margin-top: 5rem;
+  margin-top: 13rem;
 }
 
 .banner {
@@ -40,8 +37,7 @@
 
 .banner-heading {
   font-family: "Oswald", sans-serif;
-  color: #4D221F;
-  opacity: 0.9;
+  color: $white;
   @media screen and (min-width:768px) {
     font-size: 4.3rem;
   }
@@ -64,13 +60,16 @@
 }
 
 .facts-section {
-  background: #eee;
+  opacity: 0.8;
+  @media screen and (min-width:768px) {
+    width: 33%;
+  }
   margin-bottom: 2.5rem;
 }
 
 .buy-now {
   background: $button-color;
-  color: $light-grey;
+  color: $white;
   padding: 1rem 2.5rem;
   margin: 1rem 0;
 }
@@ -81,7 +80,7 @@
 
 .search-button {
   background: $button-color;
-  color: #fff;
+  color: $white;
 }
 
 .search-input {
@@ -93,11 +92,25 @@
 }
 
 
-.features {
+.highlights {
   list-style: disc;
   li {
     margin:1.5rem 0;
     color: #ddd;
     opacity: 0.8;
   }
+}
+
+
+.features {
+  @media screen and (min-width:768px) {
+    width: 33%;
+  }
+  em {
+    color: $button-color;
+  }
+}
+
+.numbers {
+  color: $dark-bg;
 }
