@@ -1,7 +1,7 @@
 @use "common-styles/variables" as *;
 
 .upper-section {
-  background: #642b73;
+  background: $dark-bg;
   background: -webkit-linear-gradient(
     to right,
     $button-color,
@@ -96,7 +96,7 @@
   list-style: disc;
   li {
     margin:1.5rem 0;
-    color: #ddd;
+    color: $light-grey;
     opacity: 0.8;
   }
 }
@@ -112,10 +112,10 @@
 }
 
 .numbers {
-  color: $dark-bg;
+  color: $button-color;
 }
 
 .black-bg {
-  background: #000;
-  color: #fff;
+  background: $black;
+  color: $white;
 }
