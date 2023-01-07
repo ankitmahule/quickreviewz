@@ -2,16 +2,8 @@
 
 .upper-section {
   background: $dark-bg;
-  background: -webkit-linear-gradient(
-    to right,
-    $button-color,
-    $dark-bg
-  );
-  background: linear-gradient(
-    to right,
-    $button-color,
-    $dark-bg
-  );
+  background: -webkit-linear-gradient(to right, $button-color, $dark-bg);
+  background: linear-gradient(to right, $button-color, $dark-bg);
   height: 100vh;
 }
 
@@ -29,7 +21,7 @@
 
 .banner {
   align-items: center;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     justify-content: space-evenly;
   }
   height: 84%;
@@ -38,8 +30,11 @@
 .banner-heading {
   font-family: "Oswald", sans-serif;
   color: $white;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 1367px) {
     font-size: 4.3rem;
+  }
+  @media screen and (max-width: 1366px) {
+    font-size: 2.6rem;
   }
 }
 
@@ -61,10 +56,9 @@
 
 .facts-section {
   opacity: 0.8;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 1024px) {
     width: 33%;
   }
-  margin-bottom: 2.5rem;
 }
 
 .buy-now {
@@ -91,19 +85,17 @@
   margin-bottom: 2.5rem;
 }
 
-
 .highlights {
   list-style: disc;
   li {
-    margin:1.5rem 0;
+    margin: 1.5rem 0;
     color: $light-grey;
     opacity: 0.8;
   }
 }
 
-
 .features {
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 1024px) {
     width: 33%;
   }
   em {
